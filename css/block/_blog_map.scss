@@ -1,0 +1,132 @@
+.blog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 1 1 0;
+        width: 100%;
+        max-width: 380px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__img {
+        background-color: #f8f8f8;
+        position: relative;
+
+        & img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: #e5e5e5;
+        margin: 20px 0;
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333333;
+        margin-top: 20px;
+        height: 40px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__text {
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #999999;
+    }
+
+    &__date {
+        background-color: #95e1d3;
+        padding: 15px;
+        display: inline-block;
+        position: absolute;
+        left: -10px;
+        bottom: 10px;
+        z-index: 1;
+    }
+
+    &__number {
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__month {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: italic;
+        color: #ffffff;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 12px;
+        color: $colorSite;
+        margin-right: 50px;
+
+        & span {
+            font-family: Roboto;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+            font-style: italic;
+            color: #999999;
+            margin-left: 5px;
+        }
+    }
+}
+
+.map {
+    text-align: center;
+    color: #f38181;
+
+    &__marker {
+        display: block;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: inherit;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 60px;
+            background-color: #f38181;
+            margin: 30px auto 0;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

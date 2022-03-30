@@ -1,0 +1,237 @@
+.footer {
+    padding-top: 80px;
+    background-color: #f8f8f8;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+    &__col-first {
+        width: 40%;
+    }
+
+    &__col-second {
+        width: 29%;
+    }
+
+    &__col-third {
+        width: 22.6%;
+    }
+
+    &__logo {
+        font-size: 46px;
+        line-height: 1;
+        font-weight: 700;
+        color: #cccccc;
+        margin-bottom: 30px;
+
+        &_text {
+            font-family: Roboto;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #999999;
+            margin-bottom: 47px;
+        }
+    }
+
+    &__followers {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #333333;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+
+        & span {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+    &__social {
+        display: flex;
+        margin-bottom: 30px;
+
+        & p {
+            font-family: Roboto;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+            font-style: italic;
+            color: #999999;
+            margin-right: 23px;
+        }
+
+        &_link {
+            color: $colorSite;
+
+            &:not(:last-child) {
+                margin-right: 18px;
+            }
+        }
+    }
+
+    .copyright {
+        padding: 20px 0;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #333333;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .copyright span {
+        color: #f38181;
+    }
+}
+
+.subscribe {
+    display: flex;
+    width: 100%;
+    max-width: 380px;
+
+    &__input {
+        height: 40px;
+        padding: 11px;
+        background-color: #ffffff;
+        border: 1px solid #e7e7e7;
+        border-right: 0;
+        padding-left: 15px;
+        font-size: 20px;
+        color: #333333;
+        font-family: inherit;
+        outline: 0;
+
+        &:focus {
+            box-shadow: inset 0 0 5px #95e1d3;
+        }
+
+        &::placeholder {
+            font-family: Roboto;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+            font-style: italic;
+            color: #cccccc;
+        }
+    }
+
+    &__btn {
+        height: 40px;
+        padding: 11px 20px;
+        background-color: $colorSite;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+            background-color: #14a78c;
+        }
+
+        &:active {
+            background-color: #ffffff;
+            outline: 1px solid $colorSite;
+            color: $colorSite;
+        }
+    }
+}
+
+.blogs {
+    &__title {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333333;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 27px;
+        }
+    }
+
+    &__img {
+        width: 120px;
+        height: 80px;
+    }
+
+    &__content {
+        padding-left: 20px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333333;
+        margin-bottom: 5px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__date {
+        font-family: Roboto;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 300;
+        font-style: italic;
+        color: #999999;
+    }
+}
+
+.instagram {
+    &__title {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333333;
+        margin-bottom: 50px;
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        min-width: 88px;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    &__img {
+        display: block;
+
+    }
+
+    &__view {
+        font-family: Roboto;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 300;
+        font-style: italic;
+        color: #333333;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

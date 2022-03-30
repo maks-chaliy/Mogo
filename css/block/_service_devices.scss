@@ -1,0 +1,66 @@
+.service {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 33.333%;
+        display: flex;
+        align-items: start;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+
+        &-border {
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+
+    &__icon {
+        margin-left: 35px;
+    }
+
+    &__content {
+        padding: 0 0 0 35px;
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #999999;
+    }
+}
+
+.devices {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+
+    &__tablet {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        //чтобы айпад был адаптивным
+    }
+
+    &__smartphone {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -50px;
+        z-index: 1;
+    }
+}

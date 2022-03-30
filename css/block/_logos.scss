@@ -1,0 +1,24 @@
+
+
+.logos {
+    background-color: #f8f8f8;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 137px;
+        height: 148px;
+    }
+
+    &__img {    
+        display: block;
+        opacity: 0.8;
+    }
+}

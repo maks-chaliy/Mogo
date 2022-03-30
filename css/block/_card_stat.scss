@@ -1,0 +1,160 @@
+.card {
+    margin: 80px -15px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 33.3333%;
+        padding: 0 15px;
+    }
+
+    &__inner {
+        background-color: $colorSite;
+        position: relative;
+    }
+
+    &__inner:hover &__img {
+        transform: translate3d(-10px, -10px, 0);
+        //при наведении на about__item сдвигается картинка
+    }
+
+    &__inner:hover &__img img {
+        opacity: 0.1;
+        //при наведении на about__item появляется градиент на картинке
+    }
+
+    &__inner:hover &__content {
+        opacity: 1;
+    }
+
+    &__img {
+        background: linear-gradient(to bottom, #e57f80, #e6cf7f);
+        transition: transform 0.2s linear;
+    }
+
+    &__img img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transition: opacity 0.2s linear;
+    } 
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        transition: opacity 0.2s linear;
+
+        &-social {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    &__icon {
+        width: 32px;
+        height: 23px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    &__team {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    &__item:hover &__social {
+        opacity: 1;
+    }
+
+    &__social {
+        color: #f38181;
+        background-color: #fce38a;
+        font-size: 22px;
+        height: 56px;
+        width: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s linear;
+    }
+
+    &__social:hover {
+        color: #ffffff;
+        background-color: #f38181;
+    }
+
+    &__social:not(:last-child) {
+        border-right: 1px solid #f38181;
+    }
+
+    &__text {
+        margin-top: 30px;
+    }
+
+    &__name {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333333;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__prof {
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 300;
+        font-style: italic;
+        color: #999999;
+        text-align: center;
+    }
+}
+
+.stat {
+    background-color: $colorSite;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 80px 0;
+        flex: 1 1 0;
+        color: #ffffff;
+        text-transform: uppercase;
+        line-height: 1;
+        text-align: center;
+        border-left: 1px solid #b5eae0;
+
+        &:last-child {
+            border-right: 1px solid #b5eae0;
+            //полоска с права у последнего элемента
+        }
+    }
+
+    &__num {
+        font-size: 72px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
